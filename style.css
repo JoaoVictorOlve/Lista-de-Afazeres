@@ -1,0 +1,150 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    justify-content:center;
+    display:flex;
+    background-color:#0a0c0d;
+}
+
+#container{
+    margin:50px;
+    height:500px;
+    width:1000px;
+    background-color:red;
+    display:grid;
+    position:relative;
+    grid-template-areas: "a1" "a2" "a2";
+    grid-template-rows: 200px 300px;
+}
+
+#header {
+    background-color:#1c5052;
+    grid-area: a1;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+
+}
+
+#foot {
+    background-color:#213635;
+    grid-area: a2;
+    display:flex;
+    justify-content:center;
+}
+
+#search_bar{
+    display:flex;
+    flex-direction:row;
+}
+
+#header_list{
+    color:#f2f2f2;
+}
+
+#header_input {
+    width:640px;
+    height:69px;
+    border:none;
+    border-radius: 10px 0px 0px 10px;
+    padding-left:10px;
+    font-size:30px;
+}
+
+#header_input:focus{
+    outline:none;
+}
+
+#header_submit{
+    width:86px;
+    height:69px;
+    border:none;
+    color:white;
+    background-color:#0a0c0d;
+    font-weight:bold;
+    margin-left:2px;
+    cursor:pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+#header_submit:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform:scale(1.1)
+}
+
+
+#header_clean{
+    width:86px;
+    height:69px;
+    border:none;
+    border-radius: 0px 10px 10px 0px;
+    color:white;
+    background-color:#0a0c0d;
+    font-weight:bold;
+    margin-left:2px;
+    cursor:pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+#header_clean:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform:scale(1.1)
+}
+
+#list{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+}
+
+.tarefas{
+    margin-bottom:10px;
+    background-color:white;
+    width:500px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    font-size:19px;
+    border-radius: 10px 10px 10px 10px;
+    align-items:center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+.tarefas:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform:scale(1.01)
+}
+
+
+.text_tarefas {
+    margin-left:10px;
+}
+
+.delete {
+    width: 41.77px;
+    height: 35.56px;
+    padding:0;
+    border:none;
+    background:none;
+    background-color:black;
+    color:white;
+    font-weight:bold;
+    font-size:1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 0px 10px 10px 0px;
+    cursor:pointer;
+}
+
